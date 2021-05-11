@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  max-width: 800px;
+}
+
+
+.change-button {
+  height: 50px;
+  width: 50px;
+  background: #000;
+  color: #fff;
+  opacity: 0.7;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.change-button:disabled {
+  cursor: not-allowed;
+}
+
+.dot-container {
+  position: absolute;
+  left: 45%;
+}
+
+h1{
+  text-align:center;
+  margin:10px 0px;
+  padding: 20px 0px; 
+}
+
+.dot-btn {
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 10px;
+  opacity: 0.8;
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+
+.dot-btn.active-dot {
+  background: #000;
+}
+
+.dot-btn:hover {
+  cursor: pointer;
+}
+
+.dot-btn:disabled {
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 860px) {
+  .dot-container {
+    bottom: 5%;
+  }
+}
